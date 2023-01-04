@@ -1,0 +1,19 @@
+n=int(input())
+matrix=[]
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+        matrix.append(l)
+        for i in range(n):
+            for j in range(n):
+                if i==j:
+                    print('primary')
+                if i+j==n-1:
+                    print('secondary')
+        if matrix>primary:
+            print('max')
+        else:
+            print('min')
+        
